@@ -16,7 +16,7 @@
 //= require_tree .
 
 $(window).load(function(){
-  $(".board").masonry({
+  $(".masonry").masonry({
     itemSelector: ".pin",
   })
 })

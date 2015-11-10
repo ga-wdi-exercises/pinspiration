@@ -8,7 +8,10 @@
 </head>
 <body>
 
+<h1><%= link_to "Pinspiration", root_path %></h1>
+
 <% if current_user %>
+  <%= link_to "Create New Board", new_board_path %>
   <%= link_to "Log Out #{current_user.email}", destroy_user_session_path, method: :delete %>
 <% else %>
   <%= link_to "Sign Up", new_user_registration_path %>

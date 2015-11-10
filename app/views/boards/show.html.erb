@@ -1,6 +1,11 @@
+<br>
+<br>
+<%= link_to "&larr; Back".html_safe, boards_path %> 
 <h2><%= @board.title %></h2>
-<%= link_to "&larr; Back".html_safe, boards_path %>
-<div class='board'>
+<% if @board.user == current_user %>
+  <%= link_to "Delete Board", board_path(@board), method: :delete%>
+<% end %>
+<div class='board masonry'>
   <% @board.pins.each do |pin| %>
     <div class='pin'>
       <h3><%= pin.title %></h3>
