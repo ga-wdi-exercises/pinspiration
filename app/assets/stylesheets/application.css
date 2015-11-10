@@ -17,7 +17,8 @@
 .pin{
   border:1px solid #ccc;
   border-radius: 5px;
-  max-width:200px;
+  width:200px;
+  margin:.5em;
   padding:.5em;
 }
 

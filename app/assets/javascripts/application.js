@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(window).load(function(){
+  $(".board").masonry({
+    itemSelector: ".pin",
+  })
+})
