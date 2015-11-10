@@ -1,2 +1,8 @@
 <h2><%= @board.title %></h2>
-
+<%= link_to "&larr; Back".html_safe, boards_path %>
+<% @board.pins.each do |pin| %>
+  <div class='pin'>
+    <h3><%= pin.title %></h3>
+    <%= image_tag pin.image_url %>
+  </div>
+<% end %>

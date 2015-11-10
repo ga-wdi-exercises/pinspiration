@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+.pin{
+  border:1px solid #ccc;
+  border-radius: 5px;
+  max-width:200px;
+  padding:.5em;
+}
+
+.pin img{
+  max-width:100%;
+}
+
+.pin h3{
+  margin:0;
+}
