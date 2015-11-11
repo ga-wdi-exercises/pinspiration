@@ -4,12 +4,16 @@
 <h2><%= @board.title %></h2>
 <% if @board.user == current_user %>
   <%= link_to "Delete Board", board_path(@board), method: :delete%>
+  <%= link_to "Create New Pin", new_board_pin_path(@board) %>
 <% end %>
 <div class='board masonry'>
   <% @board.pins.each do |pin| %>
     <div class='pin'>
       <h3><%= pin.title %></h3>
       <%= image_tag pin.image_url %>
+      <% if pin.user == current_user %>
+	<%= link_to "x", board_pin_path(@board, pin), method: :delete %>
+      <% end %>
     </div>
   <% end %>
 </div>
