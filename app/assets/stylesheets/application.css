@@ -19,6 +19,11 @@ html{
   color: #333;
 }
 
+h1 a{
+  color: #CD1B1F;
+  text-decoration:none;
+}
+
 a{
   color:#333;
 }
@@ -43,5 +48,45 @@ a{
 body{
   max-width:45em;
   font-family:"Helvetica Neue", sans-serif;
-  margin:auto;
+  background: #fff;
+  padding:2em;
+  margin:2em auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px #ccc;
+}
+
+body :first-child{
+  margin-top:0;
+}
+
+.row.board:nth-of-type(2n+1){
+  background: #e9e9e9;
+}
+
+.board.row{
+  padding:1em;
+  font-weight:bold;
+}
+
+.board.row > a{
+  text-decoration:none;
+}
+
+.board.row > a:hover{
+  text-decoration:underline;
+}
+
+.cf:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+
+header h1{
+  float:left;
+}
+
+header nav {
+  float:right;
+  line-height: 2;
 }

@@ -1,6 +1,6 @@
 <h2>All Boards</h2>
 <% @boards.each do |board| %>
-<div class='board'>
+<div class='board row'>
   <%= link_to board.title, board_path(board) %>
 </div>
 <% end %>
@@ -8,6 +8,8 @@
 <% if current_user %>
 <h2>My Boards</h2>
   <% current_user.boards.each do |board| %>
-    <%= link_to board.title, board_path(board) %>
+    <div class='board row'>
+      <%= link_to board.title, board_path(board) %>
+    </div>
   <% end %>
 <% end %>
