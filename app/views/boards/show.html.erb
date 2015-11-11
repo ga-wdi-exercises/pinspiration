@@ -10,7 +10,7 @@
     <div class='pin'>
       <h3><%= pin.title %></h3>
       <%= image_tag pin.image_url %>
-      <% if pin.user == current_user %>
+      <% if current_user && pin.user == current_user %>
 	<%= link_to "x", board_pin_path(@board, pin), method: :delete %>
       <% end %>
     </div>
