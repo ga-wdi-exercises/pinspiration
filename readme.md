@@ -9,36 +9,45 @@ Pinspiration requires registration to use. Users can upload, save, sort, and man
 ## Suggested Workflow
 
 Not sure where to start? Try tackling your application in the following order...
-  1. Database
-  2. Migrations
-  3. Routes
-  4. Models
-  5. Controllers
-  6. Views
-  7. Deployment
+  1. Draw an ERD
+  2. Create migrations to define your database
+  3. Define your models
+  4. Define some basic routes
+  5. Add controllers / actions & views
+  6. Deploy!
 
-# Pairing Up
+## Pairing Up
 
-For this week's lab, you will be pairing up with somebody who is at an equal Rails comfort level as you. Which level are you at?
+For this lab, you *must* work in pairs, practicing pair-programming. That means
+only one person should be typing code at a time. The other computer should
+*only* be used for looking up documentation.
+
+You can (and should use git) so that you can swap computers if you decide you'd
+like to.
+
+## Goals
+
+You and your partner should assess how you're feeling with Rails, and based on
+that, decide which level you'd like to try and implement.
 
 - **Level 1:** "I understand Rails basics but had trouble applying them to Scribblr."
 - **Level 2:** "My Scribblr is fully functional but I struggle with Rails' advanced features."
 - **Level 3:** "I am very comfortable with Rails and have worked on most of the bonuses this week."
 
-You and your partner should aim to implement all the features listed at and below your level. So if you are in a Level 1 pair, your goal should be to complete all of the bulletpoints under "Level 1". If you are in a Level 2 pair, shoot to implement all of the features listed under Level 2 **and** Level 1. Level 3 pairs -- **everything**!
+You and your partner should aim to implement all the features listed at and
+below your level.
 
 ## Level 1
 
-Implement two models...  
+Implement two models, with a RESTful interface to manage them...  
   1. Pin  
   2. User  
 
-Pins have...  
+Users should be able to signup, login, and logout.
+
+Pins have:
 - a title
 - an image url
-- Users can...
-  - log in/out and sign up
-  - save pins
 
 ## Level 2
 
@@ -47,14 +56,14 @@ Implement two additional models...
   2. Tag
 
 Pinspiration should have the following associations...  
-- Users have many boards.
-- Boards have many pins.
-- Pins have many tags.
-- Users have many tags.
+- Users have many boards, a board belongs to one user
+- Boards have many pins, a pin belongs to one board
+- Pins have many tags, a tag can be applied to many pins
 
 ## Level 3
 
-**NOTE:** Some of these stretch goals may require research on subjects not yet covered in class.
+Suggested features:
 
-Instead of storing an image url as a string, allow users to upload to AWS using paperclip or carrierwave.
-
+* Instead of storing an image url as a string, allow users to upload to AWS using
+paperclip or carrierwave.
+* Users can search, sort, or filter of pins / boards / tags
