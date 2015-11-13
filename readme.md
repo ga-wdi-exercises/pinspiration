@@ -18,9 +18,12 @@ Not sure where to start? Try tackling your application in the following order...
 
 ## Pairing Up
 
+
 For this lab, you *must* work in pairs, practicing pair-programming. That means
 only one person should be typing code at a time. The other computer should
 *only* be used for looking up documentation.
+
+Read [this short article](http://codergeneral.com/strategies-for-effective-pair-programming/) about strategies and rational for pair programming.
 
 You can (and should) use git so that you can swap computers if you decide you'd
 like to.
@@ -30,14 +33,12 @@ like to.
 You and your partner should assess how you're feeling with Rails, and based on
 that, decide which level you'd like to try and implement.
 
-- **Level 1:** "I understand Rails basics but had trouble applying them to Scribblr."
-- **Level 2:** "My Scribblr is fully functional but I struggle with Rails' advanced features."
-- **Level 3:** "I am very comfortable with Rails and have worked on most of the bonuses this week."
+## Spec
 
-You and your partner should aim to implement all the features listed at and
-below your self-assessed level.
+As always, we build our application iteratively. You and your partner should implement all the features of a level before implementing features of the next. Spend some time planning your approach to a feature before launching into it. Take advantage of the whiteboards -- they're _everywhere_.
 
-## Level 1
+
+### Bronze
 
 Implement two models, with a RESTful interface to manage them...  
   1. Pin  
@@ -49,7 +50,7 @@ Pins have:
 - a title
 - an image url
 
-## Level 2
+### Silver
 
 Implement two additional models...  
   1. Board
@@ -60,7 +61,8 @@ Pinspiration should have the following associations...
 - Boards have many pins, a pin belongs to one board
 - Pins have many tags, a tag can be applied to many pins
 
-## Level 3
+### Gold
+
 
 Suggested features:
 
