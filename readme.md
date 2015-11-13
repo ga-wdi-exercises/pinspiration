@@ -17,17 +17,15 @@ Not sure where to start? Try tackling your application in the following order...
   6. Views
   7. Deployment
 
-# Pairing Up
+## Pairing Up
 
-For this week's lab, you will be pairing up with somebody who is at an equal Rails comfort level as you. Which level are you at?
+For this week's lab, you will be pair programming. Read [this short article](http://codergeneral.com/strategies-for-effective-pair-programming/) about strategies and rational for pair programming.
 
-- **Level 1:** "I understand Rails basics but had trouble applying them to Scribblr."
-- **Level 2:** "My Scribblr is fully functional but I struggle with Rails' advanced features."
-- **Level 3:** "I am very comfortable with Rails and have worked on most of the bonuses this week."
+## Spec
 
-You and your partner should aim to implement all the features listed at and below your level. So if you are in a Level 1 pair, your goal should be to complete all of the bulletpoints under "Level 1". If you are in a Level 2 pair, shoot to implement all of the features listed under Level 2 **and** Level 1. Level 3 pairs -- **everything**!
+As always, we build our application iteratively. You and your partner should implement all the features of a level before implementing features of the next. Spend some time planning your approach to a feature before launching into it. Take advantage of the whiteboards -- they're _everywhere_.
 
-## Level 1
+### Bronze
 
 Implement two models...  
   1. Pin  
@@ -40,7 +38,7 @@ Pins have...
   - log in/out and sign up
   - save pins
 
-## Level 2
+### Silver
 
 Implement two additional models...  
   1. Board
@@ -52,9 +50,8 @@ Pinspiration should have the following associations...
 - Pins have many tags.
 - Users have many tags.
 
-## Level 3
+### Gold
 
 **NOTE:** Some of these stretch goals may require research on subjects not yet covered in class.
 
 Instead of storing an image url as a string, allow users to upload to AWS using paperclip or carrierwave.
-
