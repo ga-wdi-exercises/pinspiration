@@ -22,7 +22,7 @@ For this lab, you *must* work in pairs, practicing pair-programming. That means
 only one person should be typing code at a time. The other computer should
 *only* be used for looking up documentation.
 
-You can (and should use git) so that you can swap computers if you decide you'd
+You can (and should) use git so that you can swap computers if you decide you'd
 like to.
 
 ## Goals
@@ -35,7 +35,7 @@ that, decide which level you'd like to try and implement.
 - **Level 3:** "I am very comfortable with Rails and have worked on most of the bonuses this week."
 
 You and your partner should aim to implement all the features listed at and
-below your level.
+below your self-assessed level.
 
 ## Level 1
 
